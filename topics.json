@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Cut Inventory Costs with Simple AI",
+    "slides": [
+      "Cut Inventory Costs by up to 30% — AI for MSMEs",
+      "Problem: Overstocks and stockouts tie up cash and harm sales.",
+      "AI idea: Lightweight demand-forecasting models using POS & sales history.",
+      "How to start (4 steps):\\n1) Export 6–12 months sales CSV\\n2) Run simple forecasting\\n3) Set reorder triggers\\n4) Review weekly and tweak",
+      "Want a ready template? Email arunksurana@gmail.com"
+    ],
+    "short_caption": "Cut inventory costs using simple demand forecasting. #AIforSME #MSME",
+    "long_caption": "Overstocks and stockouts kill cashflow. Here's a lightweight path for MSMEs to forecast demand and set reorder points.",
+    "hashtags": ["#AIforSME","#MSME","#InventoryManagement","#SmallBusiness"]
+  },
+  {
+    "title": "AI Chatbots that Save Owner Hours",
+    "slides": [
+      "Answer FAQs 24/7 with a rules+AI chatbot",
+      "Problem: Repetitive queries steal owner time.",
+      "Idea: A small LLM + rule-based layer for product & policy FAQs.",
+      "Start: 1) Collect top 50 FAQs 2) Create canned replies 3) Deploy on WhatsApp/Web",
+      "Want the DIY script? Email arunksurana@gmail.com"
+    ],
+    "short_caption": "Build a rules+AI chatbot and reclaim hours every week. #AIchatbot",
+    "long_caption": "Chatbots reduce support workload. Start with top FAQs and iterate for accuracy.",
+    "hashtags": ["#AIchatbot","#CustomerService","#MSME","#WhatsAppBusiness"]
+  },
+  {
+    "title": "Smart Pricing for Better Margins",
+    "slides": [
+      "Boost margins using small pricing experiments",
+      "Problem: Static prices miss demand swings.",
+      "Idea: Track SKU velocity and run short price A/B tests.",
+      "Start: 1) Track velocity 2) Run 1-week experiments 3) Automate small moves",
+      "Email for the spreadsheet I use: arunksurana@gmail.com"
+    ],
+    "short_caption": "Small experiments can lift margins. #PricingAI #SmallBiz",
+    "long_caption": "You don't need ML experts. Velocity-based rules and brief experiments will do most of the heavy lifting.",
+    "hashtags": ["#PricingAI","#MSME","#SmallBusiness","#Growth"]
+  }
+]
