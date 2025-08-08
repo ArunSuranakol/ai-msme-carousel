@@ -1,0 +1,42 @@
+name: Test and Upload Carousel
+
+on:
+  workflow_dispatch:
+    inputs:
+      send_email:
+        description: 'Send email after generation? (yes/no)'
+        required: false
+        default: 'no'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pillow
+
+      - name: Generate carousel
+        run: python main.py
+
+      - name: Send email (optional)
+        if: ${{ github.event.inputs.send_email == 'yes' }}
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RECIPIENT: ${{ secrets.RECIPIENT }}
+        run: python main.py --send-email
+
+      - name: Upload generated outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: carousel-outputs
+          path: output/**
